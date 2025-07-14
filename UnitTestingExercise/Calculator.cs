@@ -12,8 +12,10 @@ namespace UnitTestingExercise
 
         // Step 2: Create an Add method that accepts 3 integers, adds those integers, and returns an integer
         //For Example:
-        public int Add(int num1, int num2, int num3)
+        public int? Add(int num1, int num2, int num3)
         {
+            if (num1 == null || num2 == null)
+                return null;
             return num1 + num2 + num3;
         }
 
@@ -25,8 +27,10 @@ namespace UnitTestingExercise
         // Create a Subtract method that accepts 2 integers
         // Keep track of which number is getting passed as minuend and subtrahend
 
-        public int Subtract(int minuend, int subtrahend)
+        public int? Subtract(int minuend, int subtrahend)
         {
+            if (minuend == null || subtrahend == null)
+                return null;
             return minuend - subtrahend;
         }
 
@@ -36,8 +40,10 @@ namespace UnitTestingExercise
         // Step 6: 
         // Create a Multiply method that passes 2 integers
 
-        public int Multiply(int multiplicand, int multiplier)
+        public int? Multiply(int multiplicand, int multiplier)
         {
+            if (multiplicand == null || multiplier == null)
+                return null;
             return multiplicand * multiplier;
         }
 
@@ -47,11 +53,12 @@ namespace UnitTestingExercise
         // Step 8: 
         // Create a Divide method that passes 2 integers
 
-        public int Divide(int dividend, int divisor)
+        public int? Divide(int dividend, int divisor)
         {
+            if (dividend == null || divisor == null)
+                return null;
             return dividend / divisor;
         }
-
 
         // Step 9: Navigate to the UnitTests.cs file and complete the DivideTest unit test method 
 
