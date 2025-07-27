@@ -13,6 +13,8 @@ namespace UnitTestingExercise.Tests
 
             //Arrange
             // create a Calculator object
+            
+       
 
             var test = new UnitTests();            
         
@@ -27,7 +29,7 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(null, null)]//Add test data <-------
+        [InlineData(null, null, null)]//Add test data <-------
         public void SubtractTest(int minuend, int subtrhend, int expected)
         {
             //Start Step 5 here:
@@ -41,7 +43,7 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(null, null)]//Add test data <-------
+        [InlineData(null, null, null)]//Add test data <-------
         public void MultiplyTest(int num1, int num2, int expected)
         {
             //Start Step 7 here:
@@ -55,7 +57,7 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(null, null)]//Add test data <-------
+        [InlineData(null, null, null)]//Add test data <-------
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
