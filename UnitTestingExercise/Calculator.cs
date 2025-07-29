@@ -14,7 +14,7 @@ namespace UnitTestingExercise
         //For Example:
         public int? Add(int num1, int num2, int num3)
         {
-            if (num1 == null || num2 == null)
+            if (num1 == null || num2 == null || num3 == null)
                 return null;
             return num1 + num2 + num3;
         }
