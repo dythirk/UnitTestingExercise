@@ -80,10 +80,10 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(null, null, null)]//Add test data <-------
+        [InlineData(5, 0, 0)]//Add test data <-------
         [InlineData(4, 2, 2)]
         [InlineData(27, 3, 9)]
-        [InlineData(-64, 16, 4)]
+        [InlineData(-64, 16, -4)]
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
